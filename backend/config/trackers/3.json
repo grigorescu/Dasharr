@@ -1,0 +1,14 @@
+{
+    "base_url": "https://https://blutopia.cc/api/user",
+    "tracker_type": "unit3d",
+    "stats_keys": {
+        "stats.uploaded": "uploaded_amount",
+        "stats.downloaded": "downloaded_amount",
+        "stats.ratio": "ratio",
+        "community.seeding": "seeding",
+        "community.leeching": "leeching",
+        "community.snatched": "snatched",
+        "community.uploaded": "uploaded_torrents"
+    },
+    "auth_header": "X-API-Key"
+}
