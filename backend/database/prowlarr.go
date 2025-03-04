@@ -7,7 +7,7 @@ import (
 )
 
 func GetProwlarrCredentials(indexerId interface{}) map[string]string {
-	prowlarrDb, _ := sql.Open("sqlite3", "prowlarr/prowlarr.db")
+	prowlarrDb, _ := sql.Open("sqlite3", "prowlarr/prowlarr.db:ro")
 	prowlarrReq := `SELECT Settings FROM Indexers WHERE Id = ?`
 	indexers, _ := prowlarrDb.Query(prowlarrReq, indexerId)
 
